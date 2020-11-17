@@ -2,6 +2,9 @@
 
 Inicialmente irei disponibilizar uma chave específica aws para que seja possível o link com a s3, essa chave será única e especificamente para propósitos de teste e para tal não foram feitas variáveis ambiente.
 
+## Pré-Requisito:
+   Ter instalado python em sua máquina
+
 1º. Vá até:
   PortalFotos > PortalFotos > settings.py 
   
