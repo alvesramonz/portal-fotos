@@ -1,0 +1,28 @@
+{% extends 'visitor/util/main.html' %} {% load static %} {% block content %}
+
+<style>
+  body,
+  html {
+    background: #7abecc !important;
+  }
+
+  .card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+</style>
+
+<div class="col-md-9">
+  <div class="card card-body">
+    <form method="POST" action="" enctype="multipart/form-data">
+      {% csrf_token %} {{mediaForm}}
+
+      <input class="btn btn-sm btn-info" type="submit" name="Upload Photo"/>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

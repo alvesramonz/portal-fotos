@@ -1,0 +1,42 @@
+{% extends 'visitor/util/main.html' %} {% load static %} {% block content %}
+
+<style>
+  body,
+  html {
+    background: #7abecc !important;
+  }
+
+  .card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+</style>
+
+<div class="col-md-9" style="margin-top: 16px">
+  <div class="card card-body">
+    <table class="table table-sm">
+      <tr>
+        <th>Imagem</th>
+        <th>Atualizar</th>
+      </tr>
+
+      {% for photos in medias %}
+      <tr>
+        <td><a href="{{photos.img.url}}">{{ photos.img }}</a></td>
+        <td>
+          <a
+            class="btn btn-sm btn-info"
+            href="{% url 'update_photo_state' photos.id %}"
+            >Atualizar</a
+          >
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+{% endblock %}
