@@ -23,5 +23,5 @@ Para se passar pelo casal utilize as credenciais abaixo para fazer a aprovação
   Login:casal
   Senha:123456789
   
-3º Por fim para rodar o site localmente, esteja no terminal inserido dentro do primeiro diretório PortalFotos e então digite: *python manage.py runserver*. Caso ocorra algum erro na rota: http://127.0.0.1:8000, opte pelo código: *python manage.py runserver*
+3º Por fim para rodar o site localmente, esteja no terminal inserido dentro do primeiro diretório PortalFotos e então digite: *python manage.py runserver*. Caso ocorra algum erro na rota: http://127.0.0.1:8000, opte pelo código: *python manage.py runserver 7000*
   
