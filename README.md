@@ -13,12 +13,6 @@ Inicialmente irei disponibilizar uma chave específica aws para que seja possív
     AWS_ACCESS_KEY_ID = 'SUA_CHAVE_ID'
     AWS_SECRET_ACCESS_KEY = 'SUA_CHAVE_SECRETA'
     AWS_STORAGE_BUCKET_NAME = 'portal-fotos-casal'  
-    
-  Substitua o código acima por este logo abaixo:
-  
-    AWS_ACCESS_KEY_ID = 'AKIAQCKZAB463NWZXH3Z'
-    AWS_SECRET_ACCESS_KEY = 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''
-    AWS_STORAGE_BUCKET_NAME = 'portal-fotos-casal' 
 
 2º O seguinte site funciona da forma, um casal de amigos que irá se casar em breve e eles pediram para fazer uma brincadeira com os convidados. Eles querem criar uma galeria de fotos onde todo mundo poderá subir fotos tiradas durante o casamento. Com isso a primeira página é propícia para o envio de fotos, mas apenas o casal poderá escolher quais fotos irão aparecer na página de "Galeria".
 
